@@ -10,7 +10,8 @@ connectDB();
 const app = express();
 
 // work in http
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}))
+// app.use(cors({credentials: true, origin: 'http://localhost:3000'}))
+app.use(cors());
 
 // Body parser
 app.use(express.json())
